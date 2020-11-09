@@ -17,7 +17,7 @@ image = cv2.resize(
 )
 
 imageGray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
-thresh, imageBlackAndWhite = cv2.threshold(imageGray, 100, 255, cv2.THRESH_BINARY)
+thresh, imageBlackAndWhite = cv2.threshold(imageGray, 80, 255, cv2.THRESH_BINARY)
 
 faces = faceCascade.detectMultiScale(imageGray, 1.1, 4)
 facesBlackAndWhite = faceCascade.detectMultiScale(imageBlackAndWhite, 1.1, 4)
@@ -33,7 +33,7 @@ for (x, y, w, h) in faceContours:
     cv2.rectangle(image, (x, y), (x + w, y + h), color, 2)
 
 if not(foundFace):
-    cv2.putText(image, "Nenhuma face encontrada...", (25, 25), cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 0, 0), 2, cv2.LINE_AA)
+    cv2.putText(image, "No face found...", (10, 25), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255, 0, 0), 1, cv2.LINE_AA)
 
 cv2.imshow('Output', image)
 cv2.waitKey(0)
