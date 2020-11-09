@@ -17,7 +17,7 @@ image = cv2.resize(
 )
 
 imageGray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
-thresh, imageBlackAndWhite = cv2.threshold(imageGray, 100, 255, cv2.THRESH_BINARY)
+thresh, imageBlackAndWhite = cv2.threshold(imageGray, 80, 255, cv2.THRESH_BINARY)
 
 faces = faceCascade.detectMultiScale(imageGray, 1.1, 4)
 facesBlackAndWhite = faceCascade.detectMultiScale(imageBlackAndWhite, 1.1, 4)
