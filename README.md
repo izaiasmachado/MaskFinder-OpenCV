@@ -18,4 +18,4 @@ In a nutshell, this code tries to identify if there is a person face in the imag
 | ------------------- | ------------------- |
 |  <img src="assets/img/without_mask.jpeg" width="200px" height="300px"> | <img src="assets/img/output_without_mask.png" width="200px" height="300px">  |
 |  <img src="assets/img/with_mask.jpeg" width="200px" height="300px"> | <img src="assets/img/output_with_mask.png" width="200px" height="300px">  |
-|  <img src="assets/img/no_face.jpeg" width="200px" height="300px"> | <img src="assets/img/output_no_face.jpeg" width="200px" height="300px">  |
+|  <img src="assets/img/no_face.jpeg" width="200px" height="300px"> | <img src="assets/img/output_no_face.png" width="200px" height="300px">  |
