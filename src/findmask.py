@@ -33,7 +33,7 @@ for (x, y, w, h) in faceContours:
     cv2.rectangle(image, (x, y), (x + w, y + h), color, 2)
 
 if not(foundFace):
-    cv2.putText(image, "Nenhuma face encontrada...", (25, 25), cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 0, 0), 2, cv2.LINE_AA)
+    cv2.putText(image, "No face found...", (10, 25), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255, 0, 0), 1, cv2.LINE_AA)
 
 cv2.imshow('Output', image)
 cv2.waitKey(0)
